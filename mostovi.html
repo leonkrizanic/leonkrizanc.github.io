@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostovi</title>
+    <script src="https://rp2.studenti.math.hr/~zbujanov/dz3/puzzle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            font-family: monospace;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Igra mostovi</h1>
+    <label for="puzzleSelect">Odaberi igru:</label>
+    <select id="puzzleSelect"></select>
+    <button id="start">Započni igru!</button>
+    <br>
+    Odaberi vrstu mosta
+    <span style="margin-left: 10px;">
+        <label><input type="radio" name="bridge" value="-">‐</label>
+        <label><input type="radio" name="bridge" value="=">=</label>
+        <label><input type="radio" name="bridge" value="|">|</label>
+        <label><input type="radio" name="bridge" value="||">||</label>
+    </span>
+    <br><br>
+    <div id="gameContainer"></div>
+    
+
+
+</body>
+
+</html>
